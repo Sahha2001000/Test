@@ -1,3 +1,7 @@
+
+.input-3{
+    display: none;
+}
 *,::after,::before{
     box-sizing: border-box;
 }
